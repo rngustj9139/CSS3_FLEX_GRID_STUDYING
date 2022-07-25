@@ -1,0 +1,27 @@
+/* 미디어 쿼리란 사용자의 디바이스에 따라 달라지는 반응형 서비스를 만들기 위해 필요하다 */
+
+@Media(max-width: 400px) { /* 사용자 디바이스의 크기, 즉 해상도가 400px 이하일때는 중괄호 안의 코드를 따른다는 의미이다. */
+
+}
+
+@Media(min-width: 500px) and (max-width: 800px) { /* 500px 이상 800px 이하 */
+    body {
+        background-color: red;
+    }
+}
+
+
+
+
+li {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    width: 100px;
+}
+
+@Media (max-width: 300px) {
+    li {
+        display: block;
+    }
+}

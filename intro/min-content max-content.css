@@ -1,0 +1,11 @@
+.min {
+    width: min-content; /* 컨텐츠 내용이 유지가 될 수 있는 최소한의 크기가 된다. */
+    background-color: blue;
+    color: black;
+}
+
+.max {
+    width: max-content; /* 가로크기가 컨텐츠의 최대크기로 된다. */
+    background-color: blue;
+    color: black;
+}

@@ -1,0 +1,19 @@
+.container {
+    width: 100px;
+    height: 300px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+/* 박스 세개의 크기가 컨테이너를 뚫고 나오게 되는 문제가 발생한다 => 가로 100 세로 100은 컨텐츠 영역의 크기인데 여기에 패딩과 보더를 추가했으므로 */
+
+* {
+    /* box-sizing: content-box; 디폴트값임 */
+    box-sizing: border-box; /* 이제 패딩과 보더를 추가해도 가로100 세로100이 된다. */
+}
