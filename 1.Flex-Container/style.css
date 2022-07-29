@@ -1,0 +1,30 @@
+.container {
+    display: flex; /* 메인 축이 가로가 되고 교차축이 세로가 된다. */
+    /* flex-direction: row; 디폴트 값임 */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse */
+    /* flex-direction: column;  */
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap; /* 화면 크기가 변경되었을때 item들의 크기가 변하지 않는다. */
+    /* flex-flow: row wrap; flex-wrap과 flex-direction을 한번에 쓸 수 있다. */
+    justify-content: center; /* 박스들이 중앙으로 온다. 메인축방향에서 가운데로 정렬한다.*/
+    /* justify-content: flex-end; 박스들이 오른쪽 끝으로 간다. */
+    /* justify-content: flex-start; 박스들이 왼쪽 끝으로 간다. */
+    /* align-items: center; 박스가 교차축 방향으로(지금 교차축은 세로) 가운데로 움직인다. */
+    /* align-content: center; 이것도 교차축 방향으로 움직이지만 이것을 쓰는 상황이 따로 있다 => display: flex에서 3개의 박스의 width가 너무 커져서 세로방향으로 정렬이 된 상태일때만 쓴다.*/
+}
+
+.item {
+    width: 200px;
+}
+
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: blue;
+}
+.box3 {
+    background-color: blueviolet;
+}
